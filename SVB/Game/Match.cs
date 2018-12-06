@@ -10,6 +10,6 @@ namespace SVB.Core.Game
 {
 	public class Match:SVBEntity
 	{
-		public 
+
 	}
 }

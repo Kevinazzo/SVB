@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using SVB.Core.Model.Primitive;
 
-namespace SVB.Core.Game
+namespace SVB.Core.Model
 {
 	public class Leader
 	{
 		public short hitpoints = 20;
 		public Trait trait;
 		public Card[] cards = new Card[5];
+		public short evolutionPoints;
+
 
 		public void playCard() { }
 		public void startTurn() { }

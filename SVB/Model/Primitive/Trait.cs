@@ -17,4 +17,23 @@ namespace SVB.Core.Model.Primitive
 		Dragoncraft,
 		Bloodcraft
 	}
+	[Flags]
+	public enum cardAttackFlags
+	{
+		None = 0,
+		canAttack = 0b0001,
+		rush = 0b0010,
+		storm = 0b0100,
+	}
+	[Flags]
+	public enum cardDefenseFlags
+	{
+		none											= 0b0,
+		cantBeAttacked									= 0b0001,
+		cantBeTargetedBySpells							= 0b0010,
+		cantBeDamaged									= 0b0100,
+		cantBeDestroyedByEffects						= 0b1000,
+		ambush = cantBeAttacked | cantBeTargetedBySpells,
+		invulnerable = cantBeDestroyedByEffects | cantBeDamaged
+	}	
 }

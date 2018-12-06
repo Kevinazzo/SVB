@@ -11,15 +11,11 @@ namespace SVB.Core.Game
 	{
 		#region delegate
 
-		public delegate void Fanfare(Card playedCard);
-		public delegate void LastWords(Card destroyedCard);
 
 
 		#endregion endregion
 
 		#region event
-
-		public event Fanfare onPlay;
 
 
 		#endregion

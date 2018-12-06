@@ -10,9 +10,6 @@ namespace SVB.Core.Game
 {
 	public static class operators
 	{
-		public static Card[] target(this )
-		{
-			return 
-		}
+
 	}
 }
