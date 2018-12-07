@@ -14,8 +14,11 @@ namespace SVB.Core.Model.Primitive
 		public List<genericEffect> Effects;
 
 		//Events
-		public virtual void destroy() { }
-		public void banish() { }
+		public virtual void destroy(Leader owner)
+		{
+			owner.s
+		}
+		public virtual void banish() { }
 		public virtual void AlliedFollowerAttack() { }
 		protected virtual void onStartTurn() { }
 		public virtual void onEndTurn() { }
@@ -27,5 +30,9 @@ namespace SVB.Core.Model.Primitive
 
 		public delegate void lastWordsEffects(Card caller);
 		public event lastWordsEffects LastWords;
+
+		public delegate void enhanceEffects(Card owner);
+		public event enhanceEffects enhance;
+
 	}
 }

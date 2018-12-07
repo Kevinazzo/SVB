@@ -47,6 +47,7 @@
     <Compile Include="Game\EventManager.cs" />
     <Compile Include="Game\operators.cs" />
     <Compile Include="Model\Amulet.cs" />
+    <Compile Include="Model\Effect.cs" />
     <Compile Include="Model\Leader.cs" />
     <Compile Include="Game\Match.cs" />
     <Compile Include="Model\Primitive\Card.cs" />

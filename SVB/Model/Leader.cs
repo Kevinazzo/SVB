@@ -7,12 +7,17 @@ using SVB.Core.Model.Primitive;
 
 namespace SVB.Core.Model
 {
-	public class Leader
+	public abstract class Leader
 	{
 		public short hitpoints = 20;
+		public List<Card> Hand = new List<Card>(9);
+		public List<Card> Deck = new List<Card>();
+		public List<PlaceableCard> Area = new List<PlaceableCard>();
+
 		public Trait trait;
-		public Card[] cards = new Card[5];
 		public short evolutionPoints;
+		public int shadows;
+
 
 
 		public void playCard() { }
