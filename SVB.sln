@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVBCore", "SVB\SVBCore.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVBData", "SVBData\SVBData.csproj", "{77635863-0622-4615-B533-E2445DCA3D2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVBOperations", "SVBOperations\SVBOperations.csproj", "{BBBA3B83-703C-409E-8F85-F3F8697397CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{77635863-0622-4615-B533-E2445DCA3D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77635863-0622-4615-B533-E2445DCA3D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77635863-0622-4615-B533-E2445DCA3D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBA3B83-703C-409E-8F85-F3F8697397CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBA3B83-703C-409E-8F85-F3F8697397CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBA3B83-703C-409E-8F85-F3F8697397CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBA3B83-703C-409E-8F85-F3F8697397CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

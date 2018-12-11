@@ -11,7 +11,10 @@ namespace SVB.Core.Model
 	{
 		public short baseAtk { get; set; }
 		public short baseDef { get; set; }
+		public short atk { get; set; }
+		public short def { get; set; }
 		public short attackCount { get; set; }
+		
 
 		public bool attackDisabled { get; set; }
 		public bool hasAttacked { get; set; }
@@ -29,6 +32,7 @@ namespace SVB.Core.Model
 		public bool canBeDestroyedByEffects { get; set; }
 		public bool canBeDamaged { get; set; }
 		public bool isEvolved { get; set; }
+		public bool isDamaged { get; set; }
 
 		//protected virtual void attack(Card attacker, Card target)
 		//{
@@ -48,7 +52,7 @@ namespace SVB.Core.Model
 		public event Action isAttacking;
 		public event clashActions Clashed;
 		public event Action Attacked;
-		public event Action Evolved
+		public event Action Evolved;
 
 		#endregion
 		//Effects

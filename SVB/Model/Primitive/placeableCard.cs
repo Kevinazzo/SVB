@@ -16,9 +16,9 @@ namespace SVB.Core.Model.Primitive
 		//Events
 		public virtual void destroy(Leader owner)
 		{
-			owner.s
+			owner.shadows++;
 		}
-		public virtual void banish() { }
+
 		public virtual void AlliedFollowerAttack() { }
 		protected virtual void onStartTurn() { }
 		public virtual void onEndTurn() { }
@@ -33,6 +33,5 @@ namespace SVB.Core.Model.Primitive
 
 		public delegate void enhanceEffects(Card owner);
 		public event enhanceEffects enhance;
-
 	}
 }

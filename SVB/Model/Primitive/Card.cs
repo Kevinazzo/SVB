@@ -13,7 +13,10 @@ namespace SVB.Core.Model.Primitive
 		public short rarity { get; set; }
 		public Trait trait { get; set; }
 
-		public delegate void NecromancyActions(Card caller); 
+		public virtual void discard() { }
+		public virtual void banish() { }
+
+		public delegate void NecromancyActions(Card caller);
 		public delegate void OverflowActions(Card caller);
 		public delegate void SpellboostActions(Card caller);
 		public delegate void VengeanceActions(Card caller);
