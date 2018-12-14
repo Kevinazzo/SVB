@@ -9,11 +9,11 @@ namespace SVB.Core.Model
 {
 	public abstract class Follower : PlaceableCard
 	{
-		public short baseAtk { get; set; }
-		public short baseDef { get; set; }
-		public short atk { get; set; }
-		public short def { get; set; }
-		public short attackCount { get; set; }
+		public int baseAtk { get; set; }
+		public int baseDef { get; set; }
+		public int atk { get; set; }
+		public int def { get; set; }
+		public int attackCount { get; set; }
 		
 
 		public bool attackDisabled { get; set; }
@@ -34,10 +34,10 @@ namespace SVB.Core.Model
 		public bool isEvolved { get; set; }
 		public bool isDamaged { get; set; }
 
-		//protected virtual void attack(Card attacker, Card target)
-		//{
-			
-		//}
+		protected virtual void attack(Card target)
+		{
+			Attacked();
+		}
 		public void evolve(Card caller) { }
 
 		public delegate void evolveActions(Card caller); // Delegates are containers for the methods that will be invoked
@@ -56,7 +56,5 @@ namespace SVB.Core.Model
 
 		#endregion
 		//Effects
-		public virtual void clashEffects() { }
-		public virtual void evolveEffects() { }
 	}
 }

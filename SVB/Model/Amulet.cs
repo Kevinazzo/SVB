@@ -9,6 +9,6 @@ namespace SVB.Core.Model
 {
 	public abstract class Amulet:PlaceableCard
 	{
-		public short countDown;
+		public int countDown;
 	}
 }

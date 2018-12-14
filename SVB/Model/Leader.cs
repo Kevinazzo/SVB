@@ -13,14 +13,14 @@ namespace SVB.Core.Model
 		{
 
 		}
-		public short hitpoints { get; set; }
+		public int hitpoints { get; set; }
 		public List<Card> Hand = new List<Card>(9);
 		public List<Card> Deck = new List<Card>();
 		public List<PlaceableCard> Area = new List<PlaceableCard>();
 		public List<Follower> destroyedFollowers = new List<Follower>();
 		public List<Card> playedCards = new List<Card>();
 
-		public short evolutionPoints;
+		public int evolutionPoints;
 		public int shadows;
 
 

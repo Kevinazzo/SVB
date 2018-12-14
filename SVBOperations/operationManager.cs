@@ -10,7 +10,7 @@ namespace SVBOperations
 {
 	public static class operationManager
 	{
-		public static void restoreDefFollower(short amount, Follower target)
+		public static void restoreDefFollower(int amount, Follower target)
 		{
 			if (target.def + amount > target.baseDef)
 			{
@@ -23,13 +23,17 @@ namespace SVBOperations
 			}
 		}
 
-		public static void restoreDefLeader(short amount, Leader leader)
+		public static void restoreDefLeader(int amount, Leader leader)
 		{
 			if (leader.hitpoints + amount > 20)
 			{
 				leader.hitpoints = 20;
 			}
-			
+		}
+
+		public static void dealDamage(Follower attacker, Follower Defender)
+		{
+			attacker.def = attacker.def - Defender.atk;
 		}
 	}
 }
