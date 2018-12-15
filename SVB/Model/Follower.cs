@@ -15,7 +15,6 @@ namespace SVB.Core.Model
 		public int def { get; set; }
 		public int attackCount { get; set; }
 		
-
 		public bool attackDisabled { get; set; }
 		public bool hasAttacked { get; set; }
 

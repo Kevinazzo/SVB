@@ -31,9 +31,9 @@ namespace SVBOperations
 			}
 		}
 
-		public static void dealDamage(Follower attacker, Follower Defender)
+		public static int dealDamage(int amount, Follower Defender)
 		{
-			attacker.def = attacker.def - Defender.atk;
+			Defender.def = - Defender.atk;
 		}
 	}
 }

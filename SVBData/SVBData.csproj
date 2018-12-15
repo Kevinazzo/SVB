@@ -44,10 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardPacks\Classic\classicCardPack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SVBOperations\SVBOperations.csproj">
+      <Project>{bbba3b83-703c-409e-8f85-f3f8697397cc}</Project>
+      <Name>SVBOperations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SVB\SVBCore.csproj">
+      <Project>{6af78d4e-27b2-46af-b97d-804eaefa88c4}</Project>
+      <Name>SVBCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
