@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SVB.Core.Model
 {
-	public class Effect
+	public abstract class nonStackEffect
 	{
 		public override string ToString()
 		{
-
 			return base.ToString();
 		}
+		public virtual void effect() { }
 	}
 }

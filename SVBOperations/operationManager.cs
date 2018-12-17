@@ -31,9 +31,45 @@ namespace SVBOperations
 			}
 		}
 
-		public static int dealDamage(int amount, Follower Defender)
+		public static void dealDamage(int amount, Card receiver)
 		{
-			Defender.def = - Defender.atk;
+			//receiver.def .atk;
 		}
+
+		public static void gainShadow(int amount, Leader owner)
+		{
+			owner.shadows += amount;
+		}
+
+		public static void sumPlayedCard(Leader forestcraftLeader)
+		{
+
+		}
+
+		public static void peroformNecromancy(Leader shadowcraftLeader)
+		{
+
+		}
+
+		public static bool activateVengeance(Leader bloodcraftLeader)
+		{
+			return true;
+		}
+
+		public static bool activateOverflow(Leader dragoncraftLeader)
+		{
+			return true;
+		}
+
+		public static void performSpellboost(Leader runecraftLeader)
+		{
+
+		}
+
+		public static bool activateResonance(Leader portalcraftLeader) { return true; }
+		//public static PlaceableCard selectTarget()
+		//{
+		//	return new Follower();
+		//}
 	}
 }

@@ -44,8 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game\EventManager.cs" />
-    <Compile Include="Game\Match.Events.cs" />
     <Compile Include="Game\operators.cs" />
     <Compile Include="Model\Amulet.cs" />
     <Compile Include="Model\Effect.cs" />
@@ -55,7 +53,7 @@
     <Compile Include="Model\Follower.cs" />
     <Compile Include="Model\Primitive\placeableCard.cs" />
     <Compile Include="Model\Spell.cs" />
-    <Compile Include="Model\Primitive\Trait.cs" />
+    <Compile Include="Model\Primitive\Enum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Primitive\SVBEntity.cs" />
   </ItemGroup>
