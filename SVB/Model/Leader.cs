@@ -9,11 +9,9 @@ namespace SVB.Core.Model
 {
 	public abstract class Leader : Card
 	{
-		public Leader()
-		{
-
-		}
+		public delegate void leaderEffects();
 		public int hitpoints { get; set; }
+		public trait leaderClass { get; set; }
 		public List<Card> Hand = new List<Card>(9);
 		public List<Card> Deck = new List<Card>();
 		public List<PlaceableCard> Area = new List<PlaceableCard>();
@@ -22,6 +20,7 @@ namespace SVB.Core.Model
 
 		public int evolutionPoints;
 		public int shadows;
+
 
 
 		public void playCard() { }

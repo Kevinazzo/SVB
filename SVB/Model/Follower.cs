@@ -14,11 +14,12 @@ namespace SVB.Core.Model
 		public int atk { get; set; }
 		public int def { get; set; }
 		public int attackCount { get; set; }
+
+		public followerFlagSet flags { get; set; }
 		
 		public bool attackDisabled { get; set; }
 		public bool hasAttacked { get; set; }
 
-		//Attack flags
 		public bool canAttack { get; set; }
 		public bool rush { get; set; }
 		public bool storm { get; set; }
@@ -26,6 +27,7 @@ namespace SVB.Core.Model
 		public bool drain { get; set; }
 		public bool bane { get; set; }
 		public bool ward { get; set; }
+		public bool lastWords { get; set; }
 		
 		public bool canBeAttacked { get; set; }
 		public bool canBeDestroyedByEffects { get; set; }
@@ -33,27 +35,14 @@ namespace SVB.Core.Model
 		public bool isEvolved { get; set; }
 		public bool isDamaged { get; set; }
 
-		protected virtual void attack(Card target)
+		protected virtual void attack()
 		{
-			Attacked();
+
 		}
-		public void evolve(Card caller) { }
 
-		public delegate void evolveActions(Card caller); // Delegates are containers for the methods that will be invoked
-		public event evolveActions Evolve; //
+		protected virtual void evolve()
+		{
 
-		public delegate void clashActions(Card owner);
-
-
-		public delegate void attackActions(Card attacker, Card target);
-
-		#region events
-		public event Action isAttacking;
-		public event clashActions Clashed;
-		public event Action Attacked;
-		public event Action Evolved;
-
-		#endregion
-		//Effects
+		}
 	}
 }
