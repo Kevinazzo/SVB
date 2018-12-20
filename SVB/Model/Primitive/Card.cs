@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SVB.Core.Model.Primitive
 {
-	public abstract class Card
+	public abstract class Card : SVBEntity
 	{
 		public string name { get; set; }
 		public int ppCost { get; set; }

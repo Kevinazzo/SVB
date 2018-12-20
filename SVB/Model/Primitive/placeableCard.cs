@@ -18,7 +18,7 @@ namespace SVB.Core.Model.Primitive
 		{
 			owner.shadows++;
 		}
-
+				
 		public virtual void AlliedFollowerAttack() { }
 		protected virtual void onStartTurn() { }
 		public virtual void onEndTurn() { }
@@ -26,7 +26,7 @@ namespace SVB.Core.Model.Primitive
 		public delegate void genericEffect(Card caller);
 
 		public delegate void fanfareEffects(Card caller);
-		public event fanfareEffects Fanfare;
+		public event fanfareEffects Fanfare; 
 
 		public delegate void lastWordsEffects(Card caller);
 		public event lastWordsEffects LastWords;

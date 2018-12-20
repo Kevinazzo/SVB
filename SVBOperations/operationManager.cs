@@ -10,6 +10,7 @@ namespace SVBOperations
 {
 	public static class operationManager
 	{
+		#region attack and Defense operations
 		public static void restoreDefFollower(int amount, Follower target)
 		{
 			if (target.def + amount > target.baseDef)
@@ -31,9 +32,16 @@ namespace SVBOperations
 			}
 		}
 
-		public static int dealDamage(int amount, Follower Defender)
+		public static void dealDamage(int amount, Card dealer)
 		{
-			Defender.def = - Defender.atk;
+
 		}
+
+		public static void receiveDamage(int amount, PlaceableCard target)
+		{
+
+		}
+		#endregion
+
 	}
 }

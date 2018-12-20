@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SVB.Core.Game.EventManager">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\EventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Amulet">
+    <Position X="3.75" Y="6" Width="1.5" />
+    <InheritanceLine Type="SVB.Core.Model.Primitive.PlaceableCard" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.125" Y="5.549" />
+        <Point X="5.125" Y="5.76" />
+        <Point X="4.5" Y="5.76" />
+        <Point X="4.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Amulet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Effect">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Effect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Follower">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="SVB.Core.Model.Follower.evolveActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Follower.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Follower.clashActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Follower.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Follower.attackActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Follower.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <InheritanceLine Type="SVB.Core.Model.Primitive.PlaceableCard" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="5.549" />
+        <Point X="5.375" Y="5.76" />
+        <Point X="6" Y="5.76" />
+        <Point X="6" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAVCACEAAAAAAAAIBAAGgCAEARACCACAoCQAACCAAAA=</HashCode>
+      <FileName>Model\Follower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Leader">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAAAAAAAAAgAAAARAAAAAEAABAAQAAIBA=</HashCode>
+      <FileName>Model\Leader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Spell">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Primitive.Card">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="SVB.Core.Model.Primitive.Card.NecromancyActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.Card.OverflowActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.Card.SpellboostActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.Card.VengeanceActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.Card.ResonanceActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.Card.PlayedCardsActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <InheritanceLine Type="SVB.Core.Model.Primitive.SVBEntity" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="0.875" />
+        <Point X="2.5" Y="0.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAgYAAAAAEAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Model\Primitive\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Primitive.PlaceableCard">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="SVB.Core.Model.Primitive.PlaceableCard.genericEffect" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\placeableCard.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.PlaceableCard.fanfareEffects" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\placeableCard.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.PlaceableCard.lastWordsEffects" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\placeableCard.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="SVB.Core.Model.Primitive.PlaceableCard.enhanceEffects" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Primitive\placeableCard.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAAAIAAAAAAAQAQEAAAAAAAQBAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Primitive\placeableCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Primitive.SVBEntity">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Primitive\SVBEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SVB.Core.Model.Primitive.Trait">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAIAAAAAAAAACQAAAAAAAAAIAAAAAgAAAQAAAg=</HashCode>
+      <FileName>Model\Primitive\Trait.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SVB.Core.Model.Primitive.cardAttackFlags">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAACAAAQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\Primitive\Trait.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SVB.Core.Model.Primitive.cardDefenseFlags">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAAgAAAAAAQAAAAAAAAAAAAgAAACAAAABAAA=</HashCode>
+      <FileName>Model\Primitive\Trait.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
