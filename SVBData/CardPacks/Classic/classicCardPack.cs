@@ -12,9 +12,9 @@ namespace SVBData.CardPacks.Classic
 {
 	public sealed class HarnessedFlame:Follower
 	{
-		protected override void attack(Card target)
-		{
-			base.attack(target);
-		}
+		//protected override void attack(Card target)
+		//{
+		//	//base.attack(target);
+		//}
 	}
 }

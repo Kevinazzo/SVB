@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game\operators.cs" />
     <Compile Include="Model\Amulet.cs" />
     <Compile Include="Model\Effect.cs" />
     <Compile Include="Model\Leader.cs" />
@@ -58,6 +57,7 @@
     <Compile Include="Model\Primitive\SVBEntity.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Model\Diagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
