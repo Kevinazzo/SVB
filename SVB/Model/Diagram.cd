@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SVB.Core.Model.Amulet">
-    <Position X="4.25" Y="3.75" Width="1.5" />
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="SVB.Core.Model.Primitive.PlaceableCard" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="2.954" />
+        <Point X="6" Y="3.096" />
+        <Point X="5.125" Y="3.096" />
+        <Point X="5.125" Y="3.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Amulet.cs</FileName>
@@ -15,13 +23,13 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Follower">
-    <Position X="6" Y="3.75" Width="1.5" />
-    <InheritanceLine Type="SVB.Core.Model.Primitive.PlaceableCard" FixedToPoint="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="SVB.Core.Model.Primitive.PlaceableCard" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="5.25" Y="2.954" />
-        <Point X="5.25" Y="3.375" />
-        <Point X="6.75" Y="3.375" />
-        <Point X="6.75" Y="3.75" />
+        <Point X="7.125" Y="2.954" />
+        <Point X="7.125" Y="3.125" />
+        <Point X="7.875" Y="3.125" />
+        <Point X="7.875" Y="3.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -30,7 +38,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Leader">
-    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Position X="0.5" Y="1.25" Width="1.5" />
     <NestedTypes>
       <Delegate Name="SVB.Core.Model.Leader.leaderEffects" Collapsed="true">
         <TypeIdentifier>
@@ -38,20 +46,13 @@
         </TypeIdentifier>
       </Delegate>
     </NestedTypes>
-    <InheritanceLine Type="SVB.Core.Model.Primitive.Card" FixedFromPoint="true">
-      <Path>
-        <Point X="2.25" Y="2" />
-        <Point X="1.25" Y="2" />
-        <Point X="1.25" Y="2.25" />
-      </Path>
-    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAKAAAAAAAAAAgAAAARAAAAAEAABAAQAAIBA=</HashCode>
       <FileName>Model\Leader.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Spell">
-    <Position X="2.5" Y="2.5" Width="1.5" />
+    <Position X="4" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Spell.cs</FileName>
@@ -61,8 +62,8 @@
     <Position X="2.25" Y="0.5" Width="1.5" />
     <InheritanceLine Type="SVB.Core.Model.Primitive.SVBEntity" FixedFromPoint="true">
       <Path>
-        <Point X="2" Y="0.688" />
-        <Point X="2.25" Y="0.688" />
+        <Point X="2" Y="0.596" />
+        <Point X="2.25" Y="0.596" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -71,11 +72,11 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Primitive.PlaceableCard">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <InheritanceLine Type="SVB.Core.Model.Primitive.Card" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="3.75" Y="0.75" />
-        <Point X="4.5" Y="0.75" />
+        <Point X="5.75" Y="0.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -83,7 +84,7 @@
       <FileName>Model\Primitive\placeableCard.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SVB.Core.Model.Primitive.SVBEntity">
+  <Class Name="SVB.Core.Model.Primitive.SVBEntity" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

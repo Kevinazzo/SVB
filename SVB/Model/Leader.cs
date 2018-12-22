@@ -7,7 +7,7 @@ using SVB.Core.Model.Primitive;
 
 namespace SVB.Core.Model
 {
-	public abstract class Leader : Card
+	public abstract class Leader
 	{
 		public delegate void leaderEffects();
 		public int hitpoints { get; set; }

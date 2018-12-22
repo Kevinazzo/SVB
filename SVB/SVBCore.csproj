@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\Clash.cs" />
+    <Compile Include="Game\IFanfare.cs" />
+    <Compile Include="Game\ILastWords.cs" />
     <Compile Include="Model\Amulet.cs" />
     <Compile Include="Model\Effect.cs" />
     <Compile Include="Model\Leader.cs" />
@@ -59,6 +62,9 @@
   <ItemGroup>
     <None Include="Model\Diagram.cd" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\IBehaviour\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
