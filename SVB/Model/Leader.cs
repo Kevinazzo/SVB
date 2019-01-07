@@ -21,8 +21,6 @@ namespace SVB.Core.Model
 		public int evolutionPoints;
 		public int shadows;
 
-
-
 		public void playCard() { }
 		public void startTurn() { }
 		public void endTurn() { }
