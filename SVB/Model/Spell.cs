@@ -7,8 +7,8 @@ using SVB.Core.Model.Primitive;
 
 namespace SVB.Core.Model
 {
-	public abstract class Spell:Card
+	public class Spell : Card
 	{
-		public void effects() { }
+		public void onPlay() { }
 	}
 }

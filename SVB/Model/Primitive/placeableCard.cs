@@ -9,15 +9,6 @@ namespace SVB.Core.Model.Primitive
 {
 	public abstract class PlaceableCard : Card
 	{
-		public int ppCost { get; set; }
-		public int rarity { get; set; }
-		public trait trait { get; set; }
-
-		protected virtual void destroy(Leader owner)
-		{
-			owner.shadows++;
-		}
-		public virtual void discard() { }
-		public virtual void banish() { }
+		
 	}
 }

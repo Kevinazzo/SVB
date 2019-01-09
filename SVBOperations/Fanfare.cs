@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SVB.Core.Game
+namespace SVBOperations
 {
-	public interface IFanfare
+	class Fanfare
 	{
-		void fanfareActions();
 	}
 }

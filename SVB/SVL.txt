@@ -1,0 +1,11 @@
+﻿URD ==============
+container(
+	obj a = follower;
+	target.destroy;
+	summon(follower);
+	)type=Fanfare;
+==================
+rapierMaster======
+Fanfare(){
+	
+}

@@ -32,15 +32,31 @@ namespace SVBOperations
 			}
 		}
 
-		public static void dealDamage(int amount, Card dealer)
+		public static void dealDamage(int amount, object _target)
+		{
+			receiveDamage(amount, _target);
+		}
+
+		public static void receiveDamage(int amount, object _target)
+		{
+			if (_target is Leader)
+			{
+				var p = _target as Leader;
+				p.hitpoints -= amount;
+			}
+		}
+
+		public static void attack(Follower target)
+		{
+
+		}
+		public static void attack(Leader target)
 		{
 
 		}
 
-		public static void receiveDamage(int amount, PlaceableCard target)
-		{
+		public Card drawCard(_class cardClass, )
 
-		}
 		#endregion
 
 	}
