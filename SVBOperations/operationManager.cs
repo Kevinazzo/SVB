@@ -8,10 +8,10 @@ using SVB.Core.Model;
 
 namespace SVBOperations
 {
-	public static class operationManager
+	public class operationManager
 	{
-		#region attack and Defense operations
-		public static void restoreDefFollower(int amount, Follower target)
+		#region restoreDefense
+		public void restoreDef(int amount, Follower target)
 		{
 			if (target.def + amount > target.baseDef)
 			{
@@ -24,40 +24,58 @@ namespace SVBOperations
 			}
 		}
 
-		public static void restoreDefLeader(int amount, Leader leader)
+		public void restoreDef(int amount, Leader leader)
 		{
 			if (leader.hitpoints + amount > 20)
 			{
 				leader.hitpoints = 20;
 			}
 		}
-
-		public static void dealDamage(int amount, object _target)
+		#endregion
+		public void dealDamage(int amount, object target)
 		{
-			receiveDamage(amount, _target);
-		}
-
-		public static void receiveDamage(int amount, object _target)
-		{
-			if (_target is Leader)
+			switch (target)
 			{
-				var p = _target as Leader;
-				p.hitpoints -= amount;
+				case Leader a:
+					receiveDamage(amount, a);
+					break;
+				case Follower a:
+					receiveDamage(amount, a);
+					break;
+			}
+			if (target is Follower)
+			{
+				var a = (Follower)target;
+				receiveDamage(amount, a);
+			}
+			else if (target is Leader)
+			{
+				var a = (Leader)target;
+				receiveDamage(amount, a);
 			}
 		}
 
-		public static void attack(Follower target)
+		public void receiveDamage(int amount, Leader target)
+		{
+				target.hitpoints -= amount;
+		}
+
+		public void receiveDamage(int amount, Follower target) { }
+
+		public void attack(Follower target)
 		{
 
 		}
-		public static void attack(Leader target)
+		public void attack(Leader target)
 		{
 
 		}
 
-		public Card drawCard(_class cardClass, )
+		public Card drawCard(_class cardClass) { return new Follower(); }
 
-		#endregion
-
+		public void gainShadows(int amount, Leader owner)
+		{
+			owner.shadows += amount;
+		}
 	}
 }

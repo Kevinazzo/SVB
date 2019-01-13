@@ -14,6 +14,7 @@ namespace SVB.Core.Model.Primitive
 		public _class cardclass { get; set; }
 		public trait trait { get; set; }
 		
+		// ↓ THYIs IS BEHAVIOUR !!!!! get this to the behaviour zone
 		protected virtual void destroy(Leader owner) { owner.shadows++; }
 		public virtual void discard(Leader owner) { owner.shadows++; }
 		public virtual void banish() { }

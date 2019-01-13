@@ -24,7 +24,7 @@
   <Class Name="SVB.Core.Model.Follower">
     <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAACFAAAAAAAAABBACgCAAABAACAAAgCAAAACAAAA=</HashCode>
+      <HashCode>AAEAACFAAAAAAAAABBACgCAAABAACACAgCAAAACAAAA=</HashCode>
       <FileName>Model\Follower.cs</FileName>
     </TypeIdentifier>
   </Class>

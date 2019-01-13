@@ -47,7 +47,6 @@
     <Compile Include="Model\Amulet.cs" />
     <Compile Include="Model\Effect.cs" />
     <Compile Include="Model\Leader.cs" />
-    <Compile Include="Game\Match.cs" />
     <Compile Include="Model\Primitive\Card.cs" />
     <Compile Include="Model\Follower.cs" />
     <Compile Include="Model\Primitive\placeableCard.cs" />
@@ -62,8 +61,6 @@
   <ItemGroup>
     <Content Include="SVL.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Game\SVL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

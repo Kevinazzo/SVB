@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SVBOperations
 {
-	class Fanfare
+	public class Match
 	{
 	}
 }

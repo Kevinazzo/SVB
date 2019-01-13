@@ -26,6 +26,6 @@ namespace SVB.Core.Model
 		public bool isEvolved { get; set; }
 		public bool isDamaged { get; set; }
 
-		public void attack()
+		public void attack() { }
 	}
 }
