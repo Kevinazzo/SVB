@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Model\Amulet.cs" />
     <Compile Include="Model\Effect.cs" />
+    <Compile Include="Model\Extension\Follower.cs" />
     <Compile Include="Model\Leader.cs" />
     <Compile Include="Model\Primitive\Card.cs" />
     <Compile Include="Model\Follower.cs" />

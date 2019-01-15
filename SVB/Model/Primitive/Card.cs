@@ -13,10 +13,11 @@ namespace SVB.Core.Model.Primitive
 		public int rarity { get; set; }
 		public _class cardclass { get; set; }
 		public trait trait { get; set; }
+		public readonly Leader owner;
 		
 		// ↓ THYIs IS BEHAVIOUR !!!!! get this to the behaviour zone
-		protected virtual void destroy(Leader owner) { owner.shadows++; }
-		public virtual void discard(Leader owner) { owner.shadows++; }
+		protected virtual void destroy() { owner.shadows++; }
+		public virtual void discard() { owner.shadows++; }
 		public virtual void banish() { }
 
 		public override string ToString()
@@ -25,6 +26,5 @@ namespace SVB.Core.Model.Primitive
 		}
 
 		//debug
-
 	}
 }

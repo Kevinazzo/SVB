@@ -4,8 +4,8 @@
     <Position X="2.25" Y="3.5" Width="1.5" />
     <InheritanceLine Type="SVB.Core.Model.Primitive.Card" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="3" Y="2.441" />
-        <Point X="2.625" Y="2.441" />
+        <Point X="3" Y="2.743" />
+        <Point X="2.625" Y="2.743" />
         <Point X="2.625" Y="3.5" />
       </Path>
     </InheritanceLine>
@@ -46,8 +46,8 @@
     <Position X="4" Y="3.5" Width="1.5" />
     <InheritanceLine Type="SVB.Core.Model.Primitive.Card" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="4.5" Y="2.441" />
-        <Point X="5" Y="2.441" />
+        <Point X="4.5" Y="2.743" />
+        <Point X="5" Y="2.743" />
         <Point X="5" Y="3.5" />
       </Path>
     </InheritanceLine>
@@ -59,7 +59,7 @@
   <Class Name="SVB.Core.Model.Primitive.Card">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEgAAAgcAAAAAEAAAAAEAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAEgAAAgcAAAAAEAAAAAEAAAAAAAAI=</HashCode>
       <FileName>Model\Primitive\Card.cs</FileName>
     </TypeIdentifier>
   </Class>

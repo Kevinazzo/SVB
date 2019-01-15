@@ -7,5 +7,9 @@ container(
 ==================
 rapierMaster======
 Fanfare(){
-	
 }
+
+class container {
+	container subcontainer;
+	delegate void effect(leader owner, trigger)
+ad}
