@@ -7,7 +7,7 @@ using SVB.Core.Model.Primitive;
 
 namespace SVB.Core.Model
 {
-	public class Follower : Card
+	public class Follower : PlaceableCard
 	{
 		public int baseAtk { get; set; }
 		public int baseDef { get; set; }

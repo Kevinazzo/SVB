@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SVB.Core.Model.Primitive;
 
-namespace SVB.Core.Model
+namespace SVBOperations.Interface
 {
-	public class Amulet : PlaceableCard
+	public interface ISvbExecutable
 	{
-		public int countDown;
+		void execute();
 	}
 }
