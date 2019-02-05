@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\ISvbExecutable.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="operationManager.cs" />
+    <Compile Include="operationManagerOOP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

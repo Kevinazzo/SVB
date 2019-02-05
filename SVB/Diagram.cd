@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SVB.Core.Model.Amulet">
-    <Position X="2.25" Y="3.5" Width="1.5" />
-    <InheritanceLine Type="SVB.Core.Model.Primitive.Card" FixedFromPoint="true" FixedToPoint="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="SVB.Core.Model.Primitive.PlaceableCard" FixedFromPoint="true">
       <Path>
-        <Point X="3" Y="2.441" />
-        <Point X="2.625" Y="2.441" />
-        <Point X="2.625" Y="3.5" />
+        <Point X="5.75" Y="1.25" />
+        <Point X="6.75" Y="1.25" />
+        <Point X="6.75" Y="1.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -22,7 +22,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Follower">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAACFAAAAAAAAABBACgCAAABAACACAgCAAAACAAAA=</HashCode>
       <FileName>Model\Follower.cs</FileName>
@@ -43,12 +43,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Spell">
-    <Position X="4" Y="3.5" Width="1.5" />
+    <Position X="4.25" Y="2.5" Width="1.5" />
     <InheritanceLine Type="SVB.Core.Model.Primitive.Card" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="4.5" Y="2.441" />
-        <Point X="5" Y="2.441" />
-        <Point X="5" Y="3.5" />
+        <Point X="4" Y="1.938" />
+        <Point X="5.25" Y="1.938" />
+        <Point X="5.25" Y="2.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -57,10 +57,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SVB.Core.Model.Primitive.Card">
-    <Position X="3" Y="0.5" Width="1.5" />
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEgAAAgcAAAAAEAAAAAEAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAEgAAAgcAAAAAEAAAAAEAAAAAAAAI=</HashCode>
       <FileName>Model\Primitive\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SVB.Core.Model.Primitive.PlaceableCard" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Primitive\placeableCard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="SVB.Core.Model.Primitive.trait">

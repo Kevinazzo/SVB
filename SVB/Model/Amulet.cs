@@ -7,7 +7,7 @@ using SVB.Core.Model.Primitive;
 
 namespace SVB.Core.Model
 {
-	public class Amulet : Card
+	public class Amulet : PlaceableCard
 	{
 		public bool isCountdown;
 		public int countDown;
