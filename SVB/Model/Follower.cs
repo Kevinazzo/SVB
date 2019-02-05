@@ -19,13 +19,15 @@ namespace SVB.Core.Model
 
 		public bool hasAttacked { get; set; }
 		public bool canAttack { get; set; }
-		
+
 		public bool canBeAttacked { get; set; }
 		public bool canBeDestroyedByEffects { get; set; }
 		public bool canBeDamaged { get; set; }
 		public bool isEvolved { get; set; }
 		public bool isDamaged { get; set; }
 
-		public void attack() { }
+		public void attack()
+		{
+		}
 	}
 }

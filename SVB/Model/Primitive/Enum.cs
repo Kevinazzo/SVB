@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SVB.Core.Model.Primitive
 {
-	public enum _class
+	public enum leaderClass
 	{
+		All,
 		Neutral,
 		Shadowcraft,
 		Forestcraft,
@@ -53,11 +54,13 @@ namespace SVB.Core.Model.Primitive
 		Resonance,
 		Accelerate,
 		Countdown,
-		Reanimate
+		Reanimate,
+		None
 	}
 
 	public enum cardType
 	{
+		Any,
 		Amulet,
 		Follower,
 		Spell

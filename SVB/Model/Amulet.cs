@@ -9,6 +9,7 @@ namespace SVB.Core.Model
 {
 	public class Amulet : Card
 	{
+		public bool isCountdown;
 		public int countDown;
 	}
 }

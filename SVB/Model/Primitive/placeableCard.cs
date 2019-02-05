@@ -9,6 +9,5 @@ namespace SVB.Core.Model.Primitive
 {
 	public abstract class PlaceableCard : Card
 	{
-		
 	}
 }
