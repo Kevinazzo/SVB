@@ -8,11 +8,11 @@ namespace SVB.Core.Model.Primitive
 {
 	public abstract class Card
 	{
-		public cardType signature { get; set; }
+		public cardType cardType { get; set; }
 		public string name { get; set; }
 		public int ppCost { get; set; }
 		public int rarity { get; set; }
-		public leaderClass cardclass { get; set; }
+		public gameClass cardclass { get; set; }
 		public trait trait { get; set; }
 
 		// ↓ THYIs IS BEHAVIOUR !!!!! get this to the behaviour zone
@@ -28,12 +28,14 @@ namespace SVB.Core.Model.Primitive
 
 		public virtual void banish()
 		{
+		
 		}
 
 		public override string ToString()
 		{
 			return this.name;
 		}
+
 
 		#region Events
 		public delegate void destroyDelegate();
@@ -49,8 +51,6 @@ namespace SVB.Core.Model.Primitive
 
 		public event destroyDelegate onDestroy;
 		#endregion
-
-		public delegate void restoroDelegate();
 
 		//debug
 	}

@@ -71,7 +71,7 @@ namespace SVBOperations
 
 		}
 
-		public Card drawCard(leaderClass cardClass) { return new Follower(); }
+		public Card drawCard(gameClass cardClass) { return new Follower(); }
 
 		public void gainShadows(int amount, Leader owner)
 		{

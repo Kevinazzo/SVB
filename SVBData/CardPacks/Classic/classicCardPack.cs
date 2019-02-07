@@ -11,9 +11,9 @@ namespace SVBData.CardPacks.Classic
 {
 	public sealed class HarnessedFlame : Follower
 	{
-		public Dictionary<string, Action<Leader>> aa = new Dictionary<string, Action<Leader>>
+		public Dictionary<string, Action<Leader,Card>> aa = new Dictionary<string, Action<Leader,Card>>
 		{
-			{"fatherPunishmentEvolve", delegate(Leader source) { }}
+			{"fatherPunishmentEvolve", delegate(Leader source, Card caster) {  }}
 		};
 	}
 }

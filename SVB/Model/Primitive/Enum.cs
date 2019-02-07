@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SVB.Core.Model.Primitive
 {
-	public enum leaderClass
+	public enum gameClass
 	{
 		All,
 		Neutral,
