@@ -22,7 +22,7 @@ namespace SVB.Core.Model
 			if (_cardtype is Amulet r)
 			{
 //				var results = cards.Select(a => a.GetType() == r.GetType() && ((a)r))
-				var results = cards.Select(a=>where )
+//				var results = cards.Select(a=>where )
 			}
 		}
 	}
