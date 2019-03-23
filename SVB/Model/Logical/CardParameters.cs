@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using SVB.Core.Model.Primitive;
 
-namespace SVB.Core.Model.Logical
+namespace SVB.Core.Model.Serialized
 {
 	public class CardParameters
 	{
